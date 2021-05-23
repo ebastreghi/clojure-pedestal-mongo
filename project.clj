@@ -7,8 +7,7 @@
                  [io.pedestal/pedestal.service "0.5.7"]
                  [io.pedestal/pedestal.route "0.5.7"]
                  [io.pedestal/pedestal.jetty "0.5.7"]]
-  :main ^:skip-aot clojure-pedestal-mongo.core
-  :target-path "target/%s"
+  :repl-options {:init-ns clojure-pedestal-mongo.core}
   :profiles {:uberjar {:aot :all
                        :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}
              :dev {:dependencies []
