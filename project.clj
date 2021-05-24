@@ -10,5 +10,5 @@
   :repl-options {:init-ns clojure-pedestal-mongo.core}
   :profiles {:uberjar {:aot :all
                        :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}
-             :dev {:dependencies []
+             :dev {:dependencies [[nubank/matcher-combinators "3.1.1"]]
                    :source-paths ["dev"]}})
